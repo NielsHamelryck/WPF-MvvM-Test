@@ -13,5 +13,14 @@ namespace Wenskaart
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            Model.Wenskaart wenskaart = new Model.Wenskaart();
+            ViewModel.WenskaartVM vm = new ViewModel.WenskaartVM(wenskaart);
+            View.WenskaartWindowView wenskaartview = new View.WenskaartWindowView();
+            wenskaartview.DataContext = vm;
+            wenskaartview.Show();
+        }
     }
 }
