@@ -18,6 +18,11 @@ namespace Wenskaart.Model
 {
    public class Wenskaart
     {
-        public BitmapImage Kaart { get; set; }
+        public BitmapImage Achtergrond { get; set; }
+        public string Wens { get; set; }
+        public FontFamily Lettertype { get; set; }
+        public int LetterGrootte { get; set; }
+        public String Status { get; set; }
+        public Boolean RechterStack { get; set; }
     }
 }

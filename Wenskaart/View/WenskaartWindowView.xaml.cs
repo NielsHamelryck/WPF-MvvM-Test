@@ -25,6 +25,6 @@ namespace Wenskaart.View
         {
             InitializeComponent();
         }
-
+             
     }
 }

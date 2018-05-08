@@ -70,8 +70,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Bal.cs" />
+    <Compile Include="Model\Kleur.cs" />
     <Compile Include="Model\Wenskaart.cs" />
+    <Compile Include="ViewModel\BalVM.cs" />
+    <Compile Include="ViewModel\KleurVM.cs" />
     <Compile Include="ViewModel\WenskaartVM.cs" />
+    <Page Include="Resources\Bal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\WenskaartWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -110,12 +118,32 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="View\images\geboortekaart.jpg" />
     <Resource Include="View\images\kerstkaart.jpg" />
     <Resource Include="View\images\vuilnisbak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\images\kaart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\images\geboortekaart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\images\kaart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\images\kerstkaart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\images\vuilnisbak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
